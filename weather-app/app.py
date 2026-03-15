@@ -23,7 +23,6 @@ def home():
         # Get one reading per day (every 8th reading = 24 hours apart)
         forecast = forecast_data['list'][::8]  # Get every 8th reading for daily forecast
         print(forecast)  # Debugging: Print the forecast data to check its structure
-        
     return render_template('index.html', weather=weather, forecast=forecast)
 
 if __name__ == '__main__':

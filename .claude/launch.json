@@ -1,0 +1,23 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "gaava",
+      "runtimeExecutable": "bun",
+      "runtimeArgs": ["run", "dev"],
+      "port": 8080
+    },
+    {
+      "name": "weather-app",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["weather-app/app.py"],
+      "port": 5000
+    },
+    {
+      "name": "finance-tracker",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["finance-tracker/app.py"],
+      "port": 5000
+    }
+  ]
+}
