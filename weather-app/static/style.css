@@ -68,3 +68,31 @@ button {
     text-transform: capitalize;
     margin-bottom: 15px;
 }
+
+
+.forecast {
+    margin-top: 30px;
+}
+
+.forecast h3 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.forecast-grid {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.forecast-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 15px 20px;
+}
+
+.forecast-temp {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 8px 0;
+}

@@ -17,6 +17,20 @@
         <p>Feels like: {{ weather.main.feels_like }}°C</p>
     </div>
         {% endif %}
+        {% if forecast %}
+    <div class="forecast">
+        <h3>5 Day Forecast</h3>
+        <div class="forecast-grid">
+            {% for day in forecast %}
+                <div class="forecast-card">
+                    <p>{{ day.dt_txt.split(' ')[0] }}</p>
+                    <p class="forecast-temp">{{ day.main.temp }}°C</p>
+                    <p>{{ day.weather[0].description }}</p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+        {% endif %}
 
         <h1>Welcome to the Weather App</h1>
         <p>Get the latest weather updates for your location.</p>
